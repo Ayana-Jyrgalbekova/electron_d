@@ -39,15 +39,3 @@ class TimetableList(ListView):
     queryset = Timetable.objects.all()
     template_name = "timetable.html"
     context_object_name = "timetable"
-
-
-class CreateNews(CreateView):
-    model = Timetable
-    template_name = 'create.html'
-    form_class = Timetable
-    success_url = '/all/'
-
-    def get_context_data(self, request, **kwargs):
-        context = super().get_context_data(**kwargs)
-
-        return context
