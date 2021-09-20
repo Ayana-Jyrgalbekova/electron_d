@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+	<div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Дневник</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Как пользоваться</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+	</div>
+
+	<div id="carouselExampleCaptions" class="carousel slide pb-4 d-sm-none d-md-block" data-ride="carousel mb-5">
+	  	<ol class="carousel-indicators">
+	    	<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+	    	<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+	   		<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+	 	</ol>
+
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">prev</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		   	<span class="sr-only">next</span>
+		</a>
+
+  		<div class="carousel-inner">
+    		<div class="carousel-item active">
+     		<img style="background-image: url({% static 'images/01.jpg' %})" class="d-block w-100 img_size">
+      		<div class="carousel-caption d-none d-md-block">
+        		<h5>Lorem ipsum dolor sit amet.</h5>
+        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus saepe libero delectus nulla minima, quasi magnam placeat similique sed ut. Deserunt, dignissimos.</p>
+        		<button class="btn btn-primary">Lorem ipsum.</button>
+      		</div>
+    	</div>
+    	<div class="carousel-item">
+      		<img style="background-image: url({% static 'images/02.jpg' %})" class="d-block w-100 img_size">
+     		<div class="carousel-caption d-none d-md-block">
+        		<h5>Lorem ipsum dolor sit amet.</h5>
+       			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus saepe libero delectus nulla minima, quasi magnam placeat similique sed ut. Deserunt, dignissimos.</p>
+        		<button class="btn btn-primary">Lorem ipsum.</button>
+      		</div>
+    	</div>
+    	<div class="carousel-item">
+      		<img style="background-image: url({% static 'images/03.png' %})" class="d-block w-100 img_size">
+     		<div class="carousel-caption d-none d-md-block">
+        		<h5>Lorem ipsum dolor sit amet.</h5>
+       			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus saepe libero delectus nulla minima, quasi magnam placeat similique sed ut. Deserunt, dignissimos.</p>
+        		<button class="btn btn-primary">Lorem ipsum.</button>
+      		</div>
+    	</div>
+    	</div>
+	</div>
+
+	<div class="container mt-5 ">
+		<div class="row">
+		<div class="col-sm-4 text-center pb-4">
+			<img style="background-image: url({% static 'images/04.jpg' %})" class="image_circle rounded-circle">
+			<h3>Lorem</h3>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quasi dicta consequatur saepe repellat deserunt. Fugiat aut eius, iure laborum!</p>
+			<button type="button" class="btn btn-outline-secondary">Veiw details&raquo;</button>
+		</div>
+
+		<div class="col-sm-4 text-center">
+			<img style="background-image: url({% static 'images/04.jpg' %})" class="image_circle rounded-circle">
+			<h3>Lorem</h3>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quasi dicta consequatur saepe repellat deserunt. Fugiat aut eius, iure laborum!</p>
+			<button type="button" class="btn btn-outline-secondary">Veiw details&raquo;</button>
+		</div>
+
+		<div class="col-sm-4 text-center">
+			<img style="background-image: url({% static 'images/04.jpg' %})" class="image_circle rounded-circle">
+			<h3>Lorem</h3>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores quasi dicta consequatur saepe repellat deserunt. Fugiat aut eius, iure laborum!</p>
+			<button type="button" class="btn btn-outline-secondary">Veiw details&raquo;</button>
+		</div>
+		</div><hr class="my-5">
+
+		<div class="row pt-4 d-flex justify-content-center medium">
+			<div class="col-sm-7 align-self-center mb-5">
+				<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab?</h2>
+				<div>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quo nisi corrupti maxime distinctio ullam quas numquam, eius non praesentium veritatis labore laudantium explicabo at consequuntur cum sed natus, soluta nam.</div>
+			</div>
+			<div class="col-lg-5">
+				<img style="background-image: url({% static 'images/04.jpg' %})" class="img-500">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-7">
+				<img style="background-image: url({% static 'images/04.jpg' %})" class="img-500">
+			</div>
+			<div class="col-lg-5 align-self-center">
+				<h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab?</h2>
+				<div>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Quo nisi corrupti maxime distinctio ullam quas numquam, eius non praesentium veritatis labore laudantium explicabo at consequuntur cum sed natus, soluta nam.</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="{% static 'js/jquery-3.5.1.slim.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.js'%}" ></script>
+</body>
+</html>

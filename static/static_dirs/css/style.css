@@ -1,0 +1,38 @@
+body{
+    font-family: Arial;
+}
+.img_size{
+    height: 650px;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.image_circle{
+	width: 140px;
+	height: 140px;
+	background-position: center;
+	background-size: cover;
+}
+.img-500{
+	width: 500px;
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+}
+
+@media screen and (max_width: 991px){
+    .medium{
+    }
+
+
+}
+<!--	@media screen and (max-width: 991px){-->
+<!--	.w-33{-->
+<!--		width: 45%-->
+<!--	}-->
+<!--}-->
+<!--@media screen and (max-width: 767px){-->
+<!--	.w-33{-->
+<!--		width: 100%-->
+<!--	}-->
+<!--}-->
